@@ -79,7 +79,7 @@ file_key = "sem.pdf"
 s3_data = read_s3_pdf(bucket_name, file_key)
 
 if s3_data:
-    prompt_text = f"Based on this document: {s3_data[:500]}\n\nAnswer this: INFORMATION TECHNOLOGY LABORATORY - IV ?"  # Limit input size
+    prompt_text = f"Based on this document: {s3_data[:500]}\n\nAnswer this: Humam Computer Interaction unit ?" 
 
     # Invoke Bedrock Titan Model
     response_bedrock = invoke_bedrock_model("amazon.titan-text-express-v1", prompt_text)
